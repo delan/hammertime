@@ -1,0 +1,32 @@
+compile			= "assignment.c"
+
+probframecorrupt = 2
+probframeloss = 2
+maxmessagesize = 256bytes
+
+host albany {
+	link to geraldton
+	link to perth
+}
+
+host geraldton {
+	link to albany
+	link to perth
+}
+
+host karratha {
+	link to kalgoorlie
+	link to perth
+}
+
+host kalgoorlie {
+	link to karratha
+	link to perth
+}
+
+host perth {
+	link to albany
+	link to geraldton
+	link to karratha
+	link to kalgoorlie
+}
