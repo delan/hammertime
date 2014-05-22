@@ -40,6 +40,7 @@ void cc200_network_from_datalink(cc200_packet_t packet) {
 			packet.source,
 			packet.destination
 		);
+		packet.source = nodeinfo.nodenumber;
 		cc200_datalink_from_network(packet);
 	}
 }
