@@ -2,6 +2,8 @@ compile = " \
 -std=c99 -Werror -Wall -Wextra -pedantic -g \
 -Wno-unused-parameter \
 physical.c \
+datalink.c \
+network.c \
 application.c \
 assignment.c \
 "

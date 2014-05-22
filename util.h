@@ -6,10 +6,11 @@
 } while (0)
 
 #define CC200_PRINT_ARGS(FORMAT, ...)                                  \
-	"%d:%s:%d: " FORMAT "\n",                                      \
+	"%d:%s:%d:%s: " FORMAT "\n",                                   \
 	nodeinfo.nodenumber,                                           \
-	__func__,                                                      \
+	__FILE__,                                                      \
 	__LINE__,                                                      \
+	__func__,                                                      \
 	__VA_ARGS__ 
 
 #define CC200_PRINT(FORMAT, ...) do {                                  \

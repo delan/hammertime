@@ -1,6 +1,9 @@
 #ifndef CC200_TYPE_H
 #define CC200_TYPE_H
 
+#include <cnet.h>
+#include <stdint.h>
+
 #define CC200_MAX_APPLICATION 256
 
 typedef uint8_t cc200_byte;
