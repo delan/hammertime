@@ -5,6 +5,8 @@
 #include <string.h>
 
 #include "util.h"
+#include "physical.h"
+#include "application.h"
 
 int cc200_routing_table[CC200_NODES][CC200_NODES] = {
 	{ 0, 1, 2, 3, 4 },
@@ -18,10 +20,11 @@ cc200_byte cc200_next_seq_to_send[CC200_NODES];
 cc200_byte cc200_next_data_seq_expected[CC200_NODES];
 cc200_byte cc200_next_ack_seq_expected[CC200_NODES];
 
-#include "physical.h"
-#include "application.h"
+cc200_list cc200_frame_queue[CC200_NODES];
 
 EVENT_HANDLER(cc200_reboot_node) {
+	for (int i = 0; i < CC200_NODES; i++)
+		cc200_frame_queue[i] = cc200_list_new();
 	CC200_PRINT(
 		"%s has %d links",
 		nodeinfo.nodename,
