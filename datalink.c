@@ -37,7 +37,7 @@ void cc200_datalink_data_next(int link) {
 		linkinfo[link].bandwidth +
 		linkinfo[link].propagationdelay;
 	timeout *= 3;
-	CC200_CHECK(CNET_disable_application(ALLNODES));
+	/* CC200_CHECK(CNET_disable_application(ALLNODES)); */
 	CC200_CHECK0(
 		cc200_link_timer_vector[link] =
 		CNET_start_timer(
@@ -124,12 +124,13 @@ void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 					)
 				);
 				cc200_next_ack_seq_expected[link] ^= 1;
-				if (cc200_frame_queue[link]->count > 0)
+				if (cc200_frame_queue[link]->count > 0) {
 					cc200_datalink_data_next(link);
-				else
-					CC200_CHECK(
+				} else {
+					/* CC200_CHECK(
 						CNET_enable_application(ALLNODES)
-					);
+					); */
+				}
 			}
 			break;
 		}
