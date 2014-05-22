@@ -58,8 +58,8 @@ void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 				frame.sequence_number
 			);
 			cc200_datalink_ack(
-				link,
-				frame.sequence_number
+				frame.sequence_number,
+				link
 			);
 			if (
 				frame.sequence_number ==
