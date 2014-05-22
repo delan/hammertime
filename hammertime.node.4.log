@@ -1,0 +1,2481 @@
+4:assignment.c:68:cc200_reboot_node: albany has 2 links
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 92 bytes received
+4:application.c:17:cc200_application_ready: 51 bytes -> @1
+4:network.c:23:cc200_network_from_application: 51 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1000 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 158 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1001 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 165 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 221 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1001 for %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 82 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 211 bytes received
+4:application.c:17:cc200_application_ready: 58 bytes -> @3
+4:network.c:23:cc200_network_from_application: 58 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1002 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 162 bytes -> @1
+4:network.c:23:cc200_network_from_application: 162 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1003 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1002 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1003 for %1
+4:application.c:17:cc200_application_ready: 128 bytes -> @2
+4:network.c:23:cc200_network_from_application: 128 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1004 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:application.c:17:cc200_application_ready: 209 bytes -> @2
+4:network.c:23:cc200_network_from_application: 209 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 205 bytes -> @0
+4:network.c:23:cc200_network_from_application: 205 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1005 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1005 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1006 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 187 bytes received
+4:application.c:17:cc200_application_ready: 161 bytes -> @1
+4:network.c:23:cc200_network_from_application: 161 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1006 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1007 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 252 bytes received
+4:application.c:17:cc200_application_ready: 118 bytes -> @0
+4:network.c:23:cc200_network_from_application: 118 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1007 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1008 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 201 bytes -> @3
+4:network.c:23:cc200_network_from_application: 201 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1009 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1008 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1010 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 120 bytes -> @0
+4:network.c:23:cc200_network_from_application: 120 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 64 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 86 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1009 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1010 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1011 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 68 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1011 for %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 103 bytes -> @0
+4:network.c:23:cc200_network_from_application: 103 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1012 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 224 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1012 for %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 92 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 233 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:application.c:17:cc200_application_ready: 107 bytes -> @2
+4:network.c:23:cc200_network_from_application: 107 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1013 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 166 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1013 for %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 118 bytes received
+4:application.c:17:cc200_application_ready: 105 bytes -> @3
+4:network.c:23:cc200_network_from_application: 105 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1014 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 190 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 90 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1014 for %2
+4:application.c:17:cc200_application_ready: 129 bytes -> @1
+4:network.c:23:cc200_network_from_application: 129 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1015 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1016 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 54 bytes -> @2
+4:network.c:23:cc200_network_from_application: 54 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 133 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1016 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1017 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 203 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1017 for %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 215 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 93 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 139 bytes received
+4:application.c:17:cc200_application_ready: 81 bytes -> @0
+4:network.c:23:cc200_network_from_application: 81 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1018 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 100 bytes -> @1
+4:network.c:23:cc200_network_from_application: 100 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 195 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1018 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1019 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 114 bytes -> @1
+4:network.c:23:cc200_network_from_application: 114 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 85 bytes -> @1
+4:network.c:23:cc200_network_from_application: 85 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 105 bytes -> @3
+4:network.c:23:cc200_network_from_application: 105 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1020 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 249 bytes -> @0
+4:network.c:23:cc200_network_from_application: 249 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 217 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1019 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1021 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1020 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 193 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 223 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1021 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1022 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1023 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 196 bytes -> @3
+4:network.c:23:cc200_network_from_application: 196 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1024 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1023 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1025 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 211 bytes -> @2
+4:network.c:23:cc200_network_from_application: 211 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1024 for %2
+4:application.c:17:cc200_application_ready: 251 bytes -> @0
+4:network.c:23:cc200_network_from_application: 251 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1026 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 150 bytes -> @0
+4:network.c:23:cc200_network_from_application: 150 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 117 bytes -> @0
+4:network.c:23:cc200_network_from_application: 117 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 157 bytes -> @3
+4:network.c:23:cc200_network_from_application: 157 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1027 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1026 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1028 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 237 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1028 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1029 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1030 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 150 bytes received
+4:application.c:17:cc200_application_ready: 93 bytes -> @3
+4:network.c:23:cc200_network_from_application: 93 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1029 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1031 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 101 bytes received
+4:application.c:17:cc200_application_ready: 139 bytes -> @0
+4:network.c:23:cc200_network_from_application: 139 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1030 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1032 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 139 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1031 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1033 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 187 bytes -> @2
+4:network.c:23:cc200_network_from_application: 187 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 53 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1034 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 191 bytes -> @0
+4:network.c:23:cc200_network_from_application: 191 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1035 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 199 bytes -> @0
+4:network.c:23:cc200_network_from_application: 199 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1034 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:application.c:17:cc200_application_ready: 57 bytes -> @0
+4:network.c:23:cc200_network_from_application: 57 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1035 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1036 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 167 bytes -> @3
+4:network.c:23:cc200_network_from_application: 167 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1037 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 48 bytes -> @0
+4:network.c:23:cc200_network_from_application: 48 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 71 bytes received
+4:application.c:17:cc200_application_ready: 80 bytes -> @1
+4:network.c:23:cc200_network_from_application: 80 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 207 bytes -> @3
+4:network.c:23:cc200_network_from_application: 207 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1036 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1038 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1037 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1039 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 81 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1038 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1040 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1039 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 170 bytes received
+4:application.c:17:cc200_application_ready: 79 bytes -> @0
+4:network.c:23:cc200_network_from_application: 79 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1040 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1041 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1041 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1042 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1042 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1043 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 93 bytes -> @1
+4:network.c:23:cc200_network_from_application: 93 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 240 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1044 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 217 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1044 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1045 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 152 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1045 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1046 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 108 bytes -> @2
+4:network.c:23:cc200_network_from_application: 108 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 205 bytes -> @1
+4:network.c:23:cc200_network_from_application: 205 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 149 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1047 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 224 bytes received
+4:application.c:17:cc200_application_ready: 223 bytes -> @2
+4:network.c:23:cc200_network_from_application: 223 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1048 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 134 bytes received
+4:application.c:17:cc200_application_ready: 194 bytes -> @0
+4:network.c:23:cc200_network_from_application: 194 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1048 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1049 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 115 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 203 bytes received
+4:application.c:17:cc200_application_ready: 185 bytes -> @0
+4:network.c:23:cc200_network_from_application: 185 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 124 bytes -> @3
+4:network.c:23:cc200_network_from_application: 124 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1050 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1049 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1051 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 72 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1050 for %2
+4:application.c:17:cc200_application_ready: 230 bytes -> @1
+4:network.c:23:cc200_network_from_application: 230 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1051 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1052 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 147 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1052 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1053 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 73 bytes -> @3
+4:network.c:23:cc200_network_from_application: 73 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1054 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 78 bytes -> @2
+4:network.c:23:cc200_network_from_application: 78 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1053 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1055 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 226 bytes -> @0
+4:network.c:23:cc200_network_from_application: 226 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1054 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 166 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1055 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1056 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 58 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1056 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1057 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1057 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1058 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 52 bytes -> @0
+4:network.c:23:cc200_network_from_application: 52 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 77 bytes -> @3
+4:network.c:23:cc200_network_from_application: 77 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1059 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 250 bytes -> @0
+4:network.c:23:cc200_network_from_application: 250 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 128 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1059 for %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1060 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 103 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1060 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1061 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1061 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1062 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 252 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1062 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1063 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 91 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1064 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 114 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1064 for %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:application.c:17:cc200_application_ready: 89 bytes -> @0
+4:network.c:23:cc200_network_from_application: 89 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1065 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 239 bytes -> @3
+4:network.c:23:cc200_network_from_application: 239 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1066 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1065 for %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 65 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1066 for %2
+4:application.c:17:cc200_application_ready: 77 bytes -> @2
+4:network.c:23:cc200_network_from_application: 77 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1067 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 94 bytes -> @3
+4:network.c:23:cc200_network_from_application: 94 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1068 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 140 bytes -> @0
+4:network.c:23:cc200_network_from_application: 140 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 158 bytes -> @3
+4:network.c:23:cc200_network_from_application: 158 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1069 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1070 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 100 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1070 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1071 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1072 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 181 bytes received
+4:application.c:17:cc200_application_ready: 121 bytes -> @0
+4:network.c:23:cc200_network_from_application: 121 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:application.c:17:cc200_application_ready: 229 bytes -> @2
+4:network.c:23:cc200_network_from_application: 229 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1073 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1074 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 174 bytes -> @3
+4:network.c:23:cc200_network_from_application: 174 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1073 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1075 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 230 bytes received
+4:application.c:17:cc200_application_ready: 157 bytes -> @2
+4:network.c:23:cc200_network_from_application: 157 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 170 bytes received
+4:application.c:17:cc200_application_ready: 190 bytes -> @2
+4:network.c:23:cc200_network_from_application: 190 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1076 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1077 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1076 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1078 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 151 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1077 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1078 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1079 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 126 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1079 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1080 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 158 bytes -> @1
+4:network.c:23:cc200_network_from_application: 158 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 189 bytes -> @0
+4:network.c:23:cc200_network_from_application: 189 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 78 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1080 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1081 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 74 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1081 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1082 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1082 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1083 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 162 bytes received
+4:application.c:17:cc200_application_ready: 239 bytes -> @2
+4:network.c:23:cc200_network_from_application: 239 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1084 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 245 bytes -> @1
+4:network.c:23:cc200_network_from_application: 245 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 89 bytes received
+4:application.c:17:cc200_application_ready: 56 bytes -> @0
+4:network.c:23:cc200_network_from_application: 56 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1084 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1085 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 124 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1085 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1086 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 158 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 239 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1087 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 218 bytes received
+4:application.c:17:cc200_application_ready: 209 bytes -> @0
+4:network.c:23:cc200_network_from_application: 209 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 56 bytes -> @0
+4:network.c:23:cc200_network_from_application: 56 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 157 bytes -> @2
+4:network.c:23:cc200_network_from_application: 157 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1088 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 253 bytes -> @3
+4:network.c:23:cc200_network_from_application: 253 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1089 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1088 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1090 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 205 bytes -> @3
+4:network.c:23:cc200_network_from_application: 205 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 53 bytes received
+4:application.c:17:cc200_application_ready: 197 bytes -> @0
+4:network.c:23:cc200_network_from_application: 197 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1090 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1091 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1092 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 129 bytes -> @1
+4:network.c:23:cc200_network_from_application: 129 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1091 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1093 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1094 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1093 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1095 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 149 bytes -> @0
+4:network.c:23:cc200_network_from_application: 149 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 246 bytes -> @2
+4:network.c:23:cc200_network_from_application: 246 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 229 bytes -> @2
+4:network.c:23:cc200_network_from_application: 229 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1094 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1096 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 230 bytes received
+4:application.c:17:cc200_application_ready: 78 bytes -> @1
+4:network.c:23:cc200_network_from_application: 78 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 62 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1097 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1096 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 202 bytes received
+4:application.c:17:cc200_application_ready: 217 bytes -> @0
+4:network.c:23:cc200_network_from_application: 217 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1097 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1098 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1098 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1099 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:application.c:17:cc200_application_ready: 127 bytes -> @2
+4:network.c:23:cc200_network_from_application: 127 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 179 bytes -> @0
+4:network.c:23:cc200_network_from_application: 179 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1100 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 177 bytes -> @1
+4:network.c:23:cc200_network_from_application: 177 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 162 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1100 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1101 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 222 bytes -> @2
+4:network.c:23:cc200_network_from_application: 222 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1101 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1102 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1103 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 208 bytes -> @3
+4:network.c:23:cc200_network_from_application: 208 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1104 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 148 bytes -> @1
+4:network.c:23:cc200_network_from_application: 148 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1103 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1105 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 223 bytes -> @3
+4:network.c:23:cc200_network_from_application: 223 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1104 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1106 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 70 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1105 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1107 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1106 for %2
+4:application.c:17:cc200_application_ready: 142 bytes -> @1
+4:network.c:23:cc200_network_from_application: 142 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1107 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1108 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1108 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1109 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 64 bytes -> @0
+4:network.c:23:cc200_network_from_application: 64 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 110 bytes -> @2
+4:network.c:23:cc200_network_from_application: 110 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1110 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 222 bytes received
+4:application.c:17:cc200_application_ready: 228 bytes -> @1
+4:network.c:23:cc200_network_from_application: 228 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 166 bytes -> @3
+4:network.c:23:cc200_network_from_application: 166 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1111 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 254 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1110 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1112 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1111 for %2
+4:application.c:17:cc200_application_ready: 88 bytes -> @0
+4:network.c:23:cc200_network_from_application: 88 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 185 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1112 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1113 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 153 bytes received
+4:application.c:17:cc200_application_ready: 129 bytes -> @0
+4:network.c:23:cc200_network_from_application: 129 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 76 bytes -> @1
+4:network.c:23:cc200_network_from_application: 76 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 129 bytes -> @0
+4:network.c:23:cc200_network_from_application: 129 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 204 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1113 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1114 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 106 bytes -> @0
+4:network.c:23:cc200_network_from_application: 106 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 162 bytes -> @1
+4:network.c:23:cc200_network_from_application: 162 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1115 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 165 bytes received
+4:application.c:17:cc200_application_ready: 130 bytes -> @0
+4:network.c:23:cc200_network_from_application: 130 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1115 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1116 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1116 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1117 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 143 bytes -> @0
+4:network.c:23:cc200_network_from_application: 143 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 247 bytes -> @3
+4:network.c:23:cc200_network_from_application: 247 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1118 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 164 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1119 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1118 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 114 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1120 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1120 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1121 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 171 bytes -> @3
+4:network.c:23:cc200_network_from_application: 171 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1122 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 71 bytes -> @0
+4:network.c:23:cc200_network_from_application: 71 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 72 bytes -> @0
+4:network.c:23:cc200_network_from_application: 72 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 238 bytes -> @0
+4:network.c:23:cc200_network_from_application: 238 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1121 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1123 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1122 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 242 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 57 bytes received
+4:application.c:17:cc200_application_ready: 174 bytes -> @2
+4:network.c:23:cc200_network_from_application: 174 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1123 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1124 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:application.c:17:cc200_application_ready: 130 bytes -> @0
+4:network.c:23:cc200_network_from_application: 130 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1125 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 110 bytes received
+4:application.c:17:cc200_application_ready: 146 bytes -> @1
+4:network.c:23:cc200_network_from_application: 146 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1125 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1126 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 107 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 77 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1127 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 89 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1127 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1128 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1128 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1129 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 253 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1129 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1130 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 173 bytes received
+4:application.c:17:cc200_application_ready: 232 bytes -> @0
+4:network.c:23:cc200_network_from_application: 232 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1130 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1131 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 212 bytes -> @0
+4:network.c:23:cc200_network_from_application: 212 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 130 bytes -> @0
+4:network.c:23:cc200_network_from_application: 130 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 82 bytes -> @2
+4:network.c:23:cc200_network_from_application: 82 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1131 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1132 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1132 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1133 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 246 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1133 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1134 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 159 bytes received
+4:application.c:17:cc200_application_ready: 106 bytes -> @2
+4:network.c:23:cc200_network_from_application: 106 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 85 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1135 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 126 bytes -> @3
+4:network.c:23:cc200_network_from_application: 126 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1136 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:application.c:17:cc200_application_ready: 96 bytes -> @0
+4:network.c:23:cc200_network_from_application: 96 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1137 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 113 bytes -> @3
+4:network.c:23:cc200_network_from_application: 113 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1136 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1138 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 104 bytes -> @2
+4:network.c:23:cc200_network_from_application: 104 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1137 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1139 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 122 bytes -> @0
+4:network.c:23:cc200_network_from_application: 122 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1138 for %2
+4:application.c:17:cc200_application_ready: 195 bytes -> @3
+4:network.c:23:cc200_network_from_application: 195 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1140 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 240 bytes received
+4:application.c:17:cc200_application_ready: 103 bytes -> @0
+4:network.c:23:cc200_network_from_application: 103 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 212 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1140 for %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1141 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 71 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1141 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1142 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 238 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1142 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1143 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 225 bytes received
+4:application.c:17:cc200_application_ready: 62 bytes -> @0
+4:network.c:23:cc200_network_from_application: 62 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1144 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 180 bytes received
+4:application.c:17:cc200_application_ready: 144 bytes -> @3
+4:network.c:23:cc200_network_from_application: 144 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1145 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1144 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1146 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 115 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1145 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1146 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1147 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 136 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1148 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 173 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1148 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1149 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 200 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 100 bytes received
+4:application.c:17:cc200_application_ready: 222 bytes -> @0
+4:network.c:23:cc200_network_from_application: 222 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1149 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1150 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 79 bytes -> @0
+4:network.c:23:cc200_network_from_application: 79 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 189 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1150 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1151 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 225 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1151 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1152 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 225 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1152 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1153 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 176 bytes -> @0
+4:network.c:23:cc200_network_from_application: 176 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 255 bytes -> @0
+4:network.c:23:cc200_network_from_application: 255 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 226 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1153 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1154 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 179 bytes -> @1
+4:network.c:23:cc200_network_from_application: 179 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 131 bytes -> @2
+4:network.c:23:cc200_network_from_application: 131 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1154 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1155 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 126 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 127 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1155 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1156 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 71 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1156 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1157 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 70 bytes -> @0
+4:network.c:23:cc200_network_from_application: 70 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1157 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1158 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 129 bytes received
+4:application.c:17:cc200_application_ready: 150 bytes -> @2
+4:network.c:23:cc200_network_from_application: 150 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1158 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1159 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 125 bytes -> @2
+4:network.c:23:cc200_network_from_application: 125 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 130 bytes -> @0
+4:network.c:23:cc200_network_from_application: 130 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 92 bytes -> @3
+4:network.c:23:cc200_network_from_application: 92 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1160 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1161 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 241 bytes -> @0
+4:network.c:23:cc200_network_from_application: 241 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1162 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 132 bytes -> @0
+4:network.c:23:cc200_network_from_application: 132 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 201 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 61 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1163 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 225 bytes -> @0
+4:network.c:23:cc200_network_from_application: 225 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1162 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 123 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1163 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1164 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 121 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1164 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1165 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 215 bytes -> @3
+4:network.c:23:cc200_network_from_application: 215 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1166 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 161 bytes -> @1
+4:network.c:23:cc200_network_from_application: 161 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1165 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1167 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 110 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1168 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 192 bytes -> @0
+4:network.c:23:cc200_network_from_application: 192 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1167 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1169 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 88 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1168 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1169 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1170 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1170 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1171 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 113 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 161 bytes received
+4:application.c:17:cc200_application_ready: 146 bytes -> @1
+4:network.c:23:cc200_network_from_application: 146 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1171 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1172 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 186 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1172 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1173 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 229 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1173 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1174 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 209 bytes received
+4:application.c:17:cc200_application_ready: 226 bytes -> @0
+4:network.c:23:cc200_network_from_application: 226 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:application.c:17:cc200_application_ready: 172 bytes -> @3
+4:network.c:23:cc200_network_from_application: 172 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1175 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 142 bytes -> @3
+4:network.c:23:cc200_network_from_application: 142 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1174 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1176 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 249 bytes received
+4:application.c:17:cc200_application_ready: 61 bytes -> @0
+4:network.c:23:cc200_network_from_application: 61 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1175 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1177 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 140 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1176 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1178 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1177 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1178 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1179 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 53 bytes -> @0
+4:network.c:23:cc200_network_from_application: 53 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 232 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1180 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 184 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1181 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:application.c:17:cc200_application_ready: 70 bytes -> @0
+4:network.c:23:cc200_network_from_application: 70 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1181 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1182 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 68 bytes -> @0
+4:network.c:23:cc200_network_from_application: 68 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1182 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1183 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1183 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1184 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 200 bytes received
+4:application.c:17:cc200_application_ready: 181 bytes -> @0
+4:network.c:23:cc200_network_from_application: 181 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1184 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1185 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 246 bytes -> @3
+4:network.c:23:cc200_network_from_application: 246 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1186 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 241 bytes -> @1
+4:network.c:23:cc200_network_from_application: 241 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 239 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1185 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1187 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 251 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1186 for %2
+4:application.c:17:cc200_application_ready: 161 bytes -> @0
+4:network.c:23:cc200_network_from_application: 161 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1187 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1188 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 138 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 234 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1189 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 164 bytes received
+4:application.c:17:cc200_application_ready: 231 bytes -> @2
+4:network.c:23:cc200_network_from_application: 231 bytes <- @4 -> @2
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 60 bytes received
+4:application.c:17:cc200_application_ready: 89 bytes -> @1
+4:network.c:23:cc200_network_from_application: 89 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 204 bytes -> @0
+4:network.c:23:cc200_network_from_application: 204 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1190 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 246 bytes -> @0
+4:network.c:23:cc200_network_from_application: 246 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 138 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1191 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 88 bytes -> @3
+4:network.c:23:cc200_network_from_application: 88 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1192 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 202 bytes received
+4:application.c:17:cc200_application_ready: 220 bytes -> @3
+4:network.c:23:cc200_network_from_application: 220 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:application.c:17:cc200_application_ready: 104 bytes -> @3
+4:network.c:23:cc200_network_from_application: 104 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:application.c:17:cc200_application_ready: 188 bytes -> @3
+4:network.c:23:cc200_network_from_application: 188 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1191 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1193 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
+4:application.c:17:cc200_application_ready: 110 bytes -> @3
+4:network.c:23:cc200_network_from_application: 110 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1194 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:application.c:17:cc200_application_ready: 146 bytes -> @1
+4:network.c:23:cc200_network_from_application: 146 bytes <- @4 -> @1
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1193 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1195 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1194 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1196 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1195 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1197 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 87 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1196 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1198 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1197 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1199 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1198 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1200 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1199 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1201 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 253 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1200 for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1202 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1203 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %2
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1202 for %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 238 bytes received
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1204 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 193 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 126 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1204 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1205 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 115 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 80 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1205 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1206 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:application.c:17:cc200_application_ready: 117 bytes -> @0
+4:network.c:23:cc200_network_from_application: 117 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:application.c:17:cc200_application_ready: 252 bytes -> @0
+4:network.c:23:cc200_network_from_application: 252 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1207 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %2
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %2
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:network.c:32:cc200_network_from_datalink: packet <- @3
+4:application.c:31:cc200_application_from_network: 136 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #1 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #1 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 212 bytes received
+4:application.c:17:cc200_application_ready: 242 bytes -> @0
+4:network.c:23:cc200_network_from_application: 242 bytes <- @4 -> @0
+4:datalink.c:14:cc200_datalink_from_network: data #0 -> %1
+4:application.c:17:cc200_application_ready: 160 bytes -> @3
+4:network.c:23:cc200_network_from_application: 160 bytes <- @4 -> @3
+4:datalink.c:14:cc200_datalink_from_network: data #1 -> %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1208 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1207 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1209 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #1 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1209 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1210 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:assignment.c:45:cc200_link_timer_expired: timer expired for %2
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1211 for %2 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %2
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:90:cc200_datalink_from_physical: data #0 <- %1
+4:datalink.c:65:cc200_datalink_ack: ACK #0 -> %1
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:network.c:32:cc200_network_from_datalink: packet <- @0
+4:application.c:31:cc200_application_from_network: 229 bytes received
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %1
+4:datalink.c:104:cc200_datalink_from_physical: ACK #0 <- %1
+4:datalink.c:114:cc200_datalink_from_physical: stopping timer 1210 for %1
+4:datalink.c:54:cc200_datalink_data_next: starting timer 1212 for %1 at 417000 us
+4:physical.c:26:cc200_physical_from_datalink: 273 bytes -> %1
+4:physical.c:17:cc200_physical_ready: 273 bytes <- %2
+4:datalink.c:138:cc200_datalink_from_physical: bad frame <- %2
