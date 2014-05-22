@@ -18,7 +18,7 @@ void cc200_network_from_application(
 	packet.payload_length = len;
 	memcpy(&packet.payload, payload, len);
 	CC200_PRINT(
-		"%d bytes from node %d to %d",
+		"%d bytes" CC200_FROM CC200_NODE CC200_TO CC200_NODE,
 		len, source, destination
 	);
 	cc200_datalink_from_network(packet);
@@ -27,7 +27,7 @@ void cc200_network_from_application(
 void cc200_network_from_datalink(cc200_packet_t packet) {
 	if (packet.destination == nodeinfo.nodenumber) {
 		CC200_PRINT(
-			"packet from node %d up to application",
+			"packet" CC200_FROM CC200_NODE,
 			packet.source
 		);
 		cc200_application_from_network(
@@ -36,10 +36,10 @@ void cc200_network_from_datalink(cc200_packet_t packet) {
 		);
 	} else {
 		CC200_PRINT(
-			"forwarding packet from node %d to node %d",
-			packet.source,
-			packet.destination
+			"forward" CC200_FROM CC200_NODE CC200_TO CC200_NODE,
+			packet.source, packet.destination
 		);
+		/* rewrite the source to ensure correct routing */
 		packet.source = nodeinfo.nodenumber;
 		cc200_datalink_from_network(packet);
 	}

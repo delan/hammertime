@@ -11,7 +11,10 @@ EVENT_HANDLER(cc200_application_ready) {
 	cc200_byte payload[CC200_MAX_APPLICATION];
 	size_t len = CC200_MAX_APPLICATION;
 	CC200_CHECK(CNET_read_application(&dest, payload, &len));
-	CC200_PRINT("%zu bytes to node %d", len, dest);
+	CC200_PRINT(
+		"%zu bytes" CC200_TO CC200_NODE,
+		len, dest
+	);
 	cc200_network_from_application(
 		nodeinfo.nodenumber,
 		dest,
@@ -22,6 +25,9 @@ EVENT_HANDLER(cc200_application_ready) {
 
 void cc200_application_from_network(cc200_byte *payload, cc200_byte len) {
 	size_t payload_length = len;
-	CC200_PRINT("writing %u bytes to application", len);
+	CC200_PRINT(
+		"%zu bytes received",
+		payload_length
+	);
 	CC200_CHECK(CNET_write_application(payload, &payload_length));
 }

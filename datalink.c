@@ -9,8 +9,8 @@
 void cc200_datalink_from_network(cc200_packet_t packet) {
 	int link = cc200_routing_table[packet.source][packet.destination];
 	CC200_PRINT(
-		"building data frame with seq %u",
-		cc200_next_seq_to_send[link]
+		"data " CC200_SEQ CC200_TO CC200_LINK,
+		cc200_next_seq_to_send[link], link
 	);
 	cc200_frame_t frame;
 	frame.checksum = 0;
@@ -28,8 +28,8 @@ void cc200_datalink_from_network(cc200_packet_t packet) {
 
 void cc200_datalink_ack(cc200_byte sequence_number, int link) {
 	CC200_PRINT(
-		"building ACK frame with seq %u",
-		sequence_number
+		"ACK " CC200_SEQ CC200_TO CC200_LINK,
+		sequence_number, link
 	);
 	cc200_frame_t frame;
 	frame.checksum = 0;
@@ -53,14 +53,10 @@ void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 		switch (frame.kind) {
 		case CC200_DATA:
 			CC200_PRINT(
-				"received data frame from link %d seq %u",
-				link,
-				frame.sequence_number
+				"data " CC200_SEQ CC200_FROM CC200_LINK,
+				frame.sequence_number, link
 			);
-			cc200_datalink_ack(
-				frame.sequence_number,
-				link
-			);
+			cc200_datalink_ack(frame.sequence_number, link);
 			if (
 				frame.sequence_number ==
 				cc200_next_data_seq_expected[link]
@@ -71,9 +67,8 @@ void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 			break;
 		case CC200_ACK:
 			CC200_PRINT(
-				"received ACK frame from link %d seq %u",
-				link,
-				frame.sequence_number
+				"ACK " CC200_SEQ CC200_FROM CC200_LINK,
+				frame.sequence_number, link
 			);
 			if (
 				frame.sequence_number ==
@@ -87,9 +82,6 @@ void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 			break;
 		}
 	} else {
-		CC200_PRINT(
-			"received corrupt frame from link %d",
-			link
-		);
+		CC200_PRINT("bad frame" CC200_FROM CC200_LINK, link);
 	}
 }
