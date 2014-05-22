@@ -14,7 +14,6 @@ void cc200_datalink_from_network(cc200_packet_t packet) {
 	);
 	cc200_frame_t frame;
 	frame.checksum = 0;
-	frame.link = link;
 	frame.kind = CC200_DATA;
 	frame.sequence_number = cc200_next_seq_to_send[link];
 	memcpy(&frame.payload, &packet, sizeof(packet));
@@ -24,27 +23,26 @@ void cc200_datalink_from_network(cc200_packet_t packet) {
 	);
 	cc200_next_seq_to_send[link] ^= 1;
 	CC200_CHECK(CNET_disable_application(ALLNODES));
-	cc200_physical_from_datalink(frame);
+	cc200_physical_from_datalink(frame, link);
 }
 
-void cc200_datalink_ack(int link, cc200_byte sequence_number) {
+void cc200_datalink_ack(cc200_byte sequence_number, int link) {
 	CC200_PRINT(
 		"building ACK frame with seq %u",
 		sequence_number
 	);
 	cc200_frame_t frame;
 	frame.checksum = 0;
-	frame.link = link;
 	frame.kind = CC200_ACK;
 	frame.sequence_number = sequence_number;
 	frame.checksum = CNET_crc32(
 		(void *) &frame,
 		sizeof(frame)
 	);
-	cc200_physical_from_datalink(frame);
+	cc200_physical_from_datalink(frame, link);
 }
 
-void cc200_datalink_from_physical(cc200_frame_t frame) {
+void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 	uint32_t alleged_checksum = frame.checksum;
 	frame.checksum = 0;
 	uint32_t actual_checksum = CNET_crc32(
@@ -52,12 +50,11 @@ void cc200_datalink_from_physical(cc200_frame_t frame) {
 		sizeof(frame)
 	);
 	if (alleged_checksum == actual_checksum) {
-		int link = frame.link;
 		switch (frame.kind) {
 		case CC200_DATA:
 			CC200_PRINT(
 				"received data frame from link %d seq %u",
-				frame.link,
+				link,
 				frame.sequence_number
 			);
 			cc200_datalink_ack(
@@ -75,7 +72,7 @@ void cc200_datalink_from_physical(cc200_frame_t frame) {
 		case CC200_ACK:
 			CC200_PRINT(
 				"received ACK frame from link %d seq %u",
-				frame.link,
+				link,
 				frame.sequence_number
 			);
 			if (
@@ -92,7 +89,7 @@ void cc200_datalink_from_physical(cc200_frame_t frame) {
 	} else {
 		CC200_PRINT(
 			"received corrupt frame from link %d",
-			frame.link
+			link
 		);
 	}
 }

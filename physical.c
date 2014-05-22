@@ -12,11 +12,11 @@ EVENT_HANDLER(cc200_physical_ready) {
 	size_t len = sizeof(frame);
 	CC200_CHECK(CNET_read_physical(&link, &frame, &len));
 	CC200_PRINT("%zu bytes from link %d", len, link);
-	cc200_datalink_from_physical(frame);
+	cc200_datalink_from_physical(frame, link);
 }
 
-void cc200_physical_from_datalink(cc200_frame_t frame) {
+void cc200_physical_from_datalink(cc200_frame_t frame, int link) {
 	size_t len = sizeof(frame);
-	CC200_PRINT("%zu bytes over link %d", len, frame.link);
-	CNET_write_physical(frame.link, (void *) &frame, &len);
+	CC200_PRINT("%zu bytes over link %d", len, link);
+	CC200_CHECK(CNET_write_physical(link, (void *) &frame, &len));
 }

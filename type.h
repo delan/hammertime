@@ -22,7 +22,6 @@ typedef struct cc200_packet {
 
 typedef struct cc200_frame {
 	uint32_t checksum;
-	int link;
 	cc200_frame_type_t kind;
 	cc200_byte sequence_number;
 	cc200_packet_t payload;
