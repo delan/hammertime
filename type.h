@@ -6,6 +6,11 @@
 
 #define CC200_MAX_APPLICATION 256
 
+typedef enum cc200_frame_type {
+	CC200_DATA,
+	CC200_ACK
+} cc200_frame_type_t;
+
 typedef uint8_t cc200_byte;
 
 typedef struct cc200_packet {
@@ -17,6 +22,8 @@ typedef struct cc200_packet {
 
 typedef struct cc200_frame {
 	uint32_t checksum;
+	int link;
+	cc200_frame_type_t kind;
 	cc200_byte sequence_number;
 	cc200_packet_t payload;
 } __attribute__ ((packed)) cc200_frame_t;

@@ -1,6 +1,8 @@
 #ifndef CC200_UTIL_H
 #define CC200_UTIL_H
 
+#include <stdlib.h>
+
 #define CC200_UNUSED(NAME) do {                                        \
 	((void) sizeof(NAME));                                         \
 } while (0)

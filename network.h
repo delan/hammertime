@@ -12,4 +12,6 @@ void cc200_network_from_application(
 	cc200_byte len
 );
 
+void cc200_network_from_datalink(cc200_packet_t packet);
+
 #endif
