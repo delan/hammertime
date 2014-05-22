@@ -13,10 +13,10 @@ maxmessagesize = 256bytes
 
 host perth {
 	x=200, y=200
-	link to albany
-	link to geraldton
 	link to karratha
 	link to kalgoorlie
+	link to geraldton
+	link to albany
 }
 
 host albany {
