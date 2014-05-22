@@ -36,6 +36,7 @@ void cc200_datalink_data_next(int link) {
 		sizeof(cc200_frame_t) * 8000000 /
 		linkinfo[link].bandwidth +
 		linkinfo[link].propagationdelay;
+	timeout *= 3;
 	CC200_CHECK(CNET_disable_application(ALLNODES));
 	CC200_PRINT(
 		"starting timer for " CC200_LINK " at %" PRId64 " us",
@@ -45,7 +46,7 @@ void cc200_datalink_data_next(int link) {
 		cc200_link_timer_vector[link] =
 		CNET_start_timer(
 			cc200_link_event_vector[link],
-			3 * timeout,
+			timeout,
 			0
 		)
 	);
