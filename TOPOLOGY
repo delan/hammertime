@@ -22,26 +22,20 @@ host perth {
 	link to albany
 }
 
-host albany {
-	south east of perth
-	link to geraldton
-	link to perth
+host karratha {
+	north west of perth
+	link to kalgoorlie
+}
+
+host kalgoorlie {
+	north east of perth
 }
 
 host geraldton {
 	south west of perth
 	link to albany
-	link to perth
 }
 
-host karratha {
-	north west of perth
-	link to kalgoorlie
-	link to perth
-}
-
-host kalgoorlie {
-	north east of perth
-	link to karratha
-	link to perth
+host albany {
+	south east of perth
 }
