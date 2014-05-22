@@ -32,7 +32,23 @@ void cc200_datalink_from_network(cc200_packet_t packet) {
 }
 
 void cc200_datalink_data_next(int link) {
+	CnetTime timeout =
+		sizeof(cc200_frame_t) * 8000000 /
+		linkinfo[link].bandwidth +
+		linkinfo[link].propagationdelay;
 	CC200_CHECK(CNET_disable_application(ALLNODES));
+	CC200_PRINT(
+		"starting timer for " CC200_LINK " at %" PRId64 " us",
+		link, timeout
+	);
+	CC200_CHECK0(
+		cc200_link_timer_vector[link] =
+		CNET_start_timer(
+			cc200_link_event_vector[link],
+			3 * timeout,
+			0
+		)
+	);
 	cc200_physical_from_datalink(
 		cc200_frame_queue[link]->head->data,
 		link
@@ -87,6 +103,11 @@ void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 				frame.sequence_number ==
 				cc200_next_ack_seq_expected[link]
 			) {
+				CC200_CHECK(
+					CNET_stop_timer(
+						cc200_link_timer_vector[link]
+					)
+				);
 				cc200_list_node_free(
 					cc200_list_remove(
 						cc200_frame_queue[link],

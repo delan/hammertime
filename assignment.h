@@ -13,8 +13,9 @@ extern int cc200_routing_table[CC200_NODES][CC200_NODES];
 extern cc200_byte cc200_next_seq_to_send[CC200_NODES];
 extern cc200_byte cc200_next_data_seq_expected[CC200_NODES];
 extern cc200_byte cc200_next_ack_seq_expected[CC200_NODES];
-
 extern cc200_list cc200_frame_queue[CC200_NODES];
+extern CnetTimerID cc200_link_timer_vector[CC200_NODES];
+extern CnetEvent cc200_link_event_vector[CC200_NODES];
 
 EVENT_HANDLER(cc200_test);
 EVENT_HANDLER(cc200_reboot_node);
