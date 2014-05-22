@@ -22,8 +22,21 @@ void cc200_datalink_from_network(cc200_packet_t packet) {
 		sizeof(frame)
 	);
 	cc200_next_seq_to_send[link] ^= 1;
+	cc200_list_insert_after(
+		cc200_frame_queue[link],
+		frame,
+		cc200_frame_queue[link]->tail
+	);
+	if (cc200_frame_queue[link]->count == 1)
+		cc200_datalink_data_next(link);
+}
+
+void cc200_datalink_data_next(int link) {
 	CC200_CHECK(CNET_disable_application(ALLNODES));
-	cc200_physical_from_datalink(frame, link);
+	cc200_physical_from_datalink(
+		cc200_frame_queue[link]->head->data,
+		link
+	);
 }
 
 void cc200_datalink_ack(cc200_byte sequence_number, int link) {
@@ -74,10 +87,19 @@ void cc200_datalink_from_physical(cc200_frame_t frame, int link) {
 				frame.sequence_number ==
 				cc200_next_ack_seq_expected[link]
 			) {
-				cc200_next_ack_seq_expected[link] ^= 1;
-				CC200_CHECK(
-					CNET_enable_application(ALLNODES)
+				cc200_list_node_free(
+					cc200_list_remove(
+						cc200_frame_queue[link],
+						cc200_frame_queue[link]->head
+					)
 				);
+				cc200_next_ack_seq_expected[link] ^= 1;
+				if (cc200_frame_queue[link]->count > 0)
+					cc200_datalink_data_next(link);
+				else
+					CC200_CHECK(
+						CNET_enable_application(ALLNODES)
+					);
 			}
 			break;
 		}
