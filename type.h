@@ -4,7 +4,7 @@
 #include <cnet.h>
 #include <stdint.h>
 
-#define CC200_MAX_APPLICATION 256
+#define CC200_MAX_APPLICATION 255
 
 typedef enum cc200_frame_type {
 	CC200_DATA,
