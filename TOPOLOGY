@@ -1,7 +1,14 @@
-compile			= "assignment.c"
+compile = " \
+-std=c99 -Werror -Wall -Wextra -pedantic -g \
+-Wno-unused-parameter \
+physical.c \
+application.c \
+assignment.c \
+"
 
-probframecorrupt = 2
-probframeloss = 2
+rebootfunc = "cc200_reboot_node"
+probframecorrupt = 0
+probframeloss = 0
 maxmessagesize = 256bytes
 
 host albany {
