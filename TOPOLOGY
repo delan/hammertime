@@ -1,18 +1,21 @@
 compile = " \
 -std=c99 -Werror -Wall -Wextra -pedantic -g \
 -Wno-unused-parameter \
+assignment.c \
 list.c \
 physical.c \
 datalink.c \
 network.c \
 application.c \
-assignment.c \
 "
 
 rebootfunc = "cc200_reboot_node"
+maxmessagesize = 255bytes
+
+messagerate = 1ms
+propagationdelay = 1s
 probframecorrupt = 0
 probframeloss = 0
-maxmessagesize = 255bytes
 
 host perth {
 	x=200, y=200
