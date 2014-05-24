@@ -2,3 +2,7 @@
 *.cnet
 *.swp
 *.log
+*.aux
+*.out
+*.pdf
+*.toc

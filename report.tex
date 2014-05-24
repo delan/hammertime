@@ -1,0 +1,183 @@
+\documentclass[a4paper,12pt,titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+\hypersetup{
+	colorlinks,
+	pdfauthor=Delan Azabani,
+	pdftitle=Computer Communications 200:
+	         Stop-and-wait assignment
+}
+\lstset{basicstyle=\ttfamily, basewidth=0.5em}
+
+\title{Computer Communications 200:\\
+       Stop-and-wait assignment}
+\date{May 25, 2014}
+\author{Azabani, Delan\\17065012\\Wednesday 10 a.m.}
+
+\begin{document}
+
+\maketitle
+
+\section{Organisation of source code}
+
+The source code is divided into the following modules:
+
+\begin{itemize}
+	\item \texttt{Makefile} simply contains a \texttt{clean} recipe;
+	\item \texttt{TOPOLOGY} defines the compilation options, node topology
+	      and link characteristics;
+	\item \texttt{assignment.[ch]} contain the handler for
+	      \texttt{EV\_REBOOT} as well as global node state;
+	\item \texttt{list.[ch]} implement a queue of frames via a
+	      double-ended, doubly-linked list;
+	\item \texttt{physical.[ch]} deal with data reaching and leaving the
+	      physical layer;
+	\item \texttt{datalink.[ch]} deal with data reaching the data link
+	      layer from above and below;
+	\item \texttt{network.[ch]} deal with data reaching the network
+	      layer from above and below;
+	\item \texttt{application.[ch]} deal with data reaching and leaving
+	      the application layer;
+	\item \texttt{type.h} contains data structures, constants and other
+	      type definitions; and
+	\item \texttt{util.h} defines preprocessor macros for assertions,
+	      debugging and portable printing.
+\end{itemize}
+
+Depending on whether the symbol is a preprocessor macro or C identifier, all
+global symbols are prefixed with \texttt{CC200\_} or \texttt{cc200\_}. Doing
+this without exception helps avoid polluting the global namespaces as well as
+collisions with \texttt{cnet} symbols (such as \texttt{CHECK()} and
+\texttt{CC200\_CHECK()}).
+
+\section{Debugging and logging}
+
+By default, even without passing the \texttt{-o} argument to \texttt{cnet},
+this assignment logs nodes' messages to three locations concurrently:
+
+\begin{itemize}
+	\item the node output window (if using the \texttt{cnet} GUI),
+	\item \texttt{stderr} of the invoking pseudo-terminal, and
+	\item a unique file named \texttt{hammertime.\$\$.log}.
+\end{itemize}
+
+Output via \texttt{CC200\_PRINT()}, which includes \texttt{cnet} errors, are
+strictly in the format:
+
+\begin{lstlisting}
+(nodeinfo.nodenumber):(__FILE__):(__LINE__):(__FUNC__): message
+\end{lstlisting}
+
+Common conventions used within the output include:
+
+\begin{itemize}
+	\item \texttt{@0} for node numbers;
+	\item \texttt{\%1} for link numbers;
+	\item \texttt{\#0} for sequence numbers; and
+	\item \texttt{<-} and \texttt{->} for `from' and `to', respectively.
+\end{itemize}
+
+The high level of detail and consistency in the assignment's debugging output
+significantly aided in finding and correcting defects in the protocol source.
+
+\section{Software reliability}
+
+The protocol source files are compiled with \texttt{-std=c99} to avoid the use
+of non-standard language extensions. In the context of static analysis, the
+compiler flags \texttt{-Werror -Wall -Wextra -pedantic} are also used to
+enforce some best practices.
+
+\texttt{-g} was further enabled to facilitate debugging with \texttt{gdb} and
+\texttt{valgrind}. The latter found no invalid memory accesses or leaks other
+than any caused by \texttt{cnet}'s own code.
+
+An exception needed to be made with \texttt{-Wno-unused-parameter} --- while
+the function arguments to event handlers often remain unused, they must remain
+in the declaration to yield a compatible function signature. An alternative
+solution includes the use of the \texttt{CC200\_UNUSED()} macro, which is
+undesirable.
+
+\section{Simplified program flow}
+
+\texttt{assignment.c} is where the simulation ultimately commences. A static
+routing table as well as some state (global to each node) are initialised. The
+\texttt{cc200\_link\_timer\_expired} event handler resends the specified link's
+data frame waiting at the head of the queue.
+
+The queues and timers, one for each link, are configured. A handful of
+diagnostic messages are printed, the two primary events are bound to their
+handlers, and the generation of messages by the application layer is commenced.
+
+\begin{enumerate}
+	\item \texttt{cc200\_application\_ready} accepts a message of up to 255
+	      bytes from the sender's application layer, immediately handing it
+	      down to the network layer;
+	\item \texttt{cc200\_network\_from\_application} wraps the message in
+	      a packet with source and destination node addresses, as well as
+	      a field specifying the message's length;
+	\item \texttt{cc200\_datalink\_from\_network} wraps the packet in a
+	      data frame, tagged with a sequence number and a CRC32 checksum
+	      is calculated over the whole frame;
+	\item \texttt{cc200\_datalink\_data\_next} sets a timeout for the next
+	      data frame to have its corresponding acknowledgement frame
+	      received by the sender;
+	\item \texttt{cc200\_physical\_from\_datalink} writes the frame to a
+	      physical medium;
+	\item \texttt{cc200\_physical\_ready} accepts the delivered frame
+	      from the physical layer;
+	\item \texttt{cc200\_datalink\_from\_physical} verifies the frame's
+	      checksum and sequence number, stopping the link's timer and
+	      dequeueing a data frame if it is an ACK;
+	\item \texttt{cc200\_datalink\_ack} replies to the previous hop with an
+	      acknowledgement;
+	\item \texttt{cc200\_network\_from\_datalink} either passes the message
+	      up to the application layer, or forwards the packet to the next
+	      hop in the routing path, as necessary; and
+	\item \texttt{cc200\_application\_from\_network} writes the
+	      payload to the application layer.
+\end{enumerate}
+
+Some functions in this path, such as \texttt{cc200\_datalink\_ack} and
+\texttt{cc200\_network\_from\_datalink}, may require further traversal back up
+and down this `protocol stack', sometimes or always.
+
+\section{Flow and error control}
+
+For each node, there is a outgoing frame queue for each link. This is required
+because multiple application layer messages can be created, or packets arrive
+to be forwarded, before an acknowledgement is received on a link. With the
+stop-and-wait automatic repeat request method, no additional data frames may
+be sent during this time.
+
+This queue is implemented with a linked list allocated on the heap, as opposed
+to a circular array buffer, and is thus unbounded in maximum length except by
+the memory of the host system. At the same time, however, I did not use
+\texttt{CNET\_disable\_application} and \texttt{CNET\_enable\_application} to
+create artificial flow control, as this is both unrealistic and virtually
+impossible in the real world.
+
+Because the message rate remains constant throughout the simulation process and
+packets are never dropped regardless of a frame queue's count, a consequence of
+these decisions are that high message rates combined with high propagation
+delays and/or low link throughput may lead to congestion and an upward trend in
+message delivery time.
+
+\texttt{CNET\_crc32} is used as a fairly reliable and practical scheme for
+frame error detection. It is used for both data and acknowledgement frames. The
+fact that the function returns \texttt{uint32\_t} instead of writing out a sequence of bytes was initially disconcerting, as it indicates a lack of
+consideration for the issue of endianness, but as \texttt{cnet} always runs on
+one system, this is not a significant problem.
+
+To prevent structure alignment padding from yielding unexpected checksum
+results and \texttt{sizeof()} values, the \texttt{\_\_attribute\_\_ ((packed))}
+type attribute is specified in the definitions of \texttt{cc200\_frame\_t} and
+\texttt{cc200\_packet\_t}. While this is not included in the ISO C99 standard,
+it is supported by boty \texttt{gcc} and \texttt{clang}.
+
+\end{document}
