@@ -170,7 +170,8 @@ message delivery time.
 
 \texttt{CNET\_crc32} is used as a fairly reliable and practical scheme for
 frame error detection. It is used for both data and acknowledgement frames. The
-fact that the function returns \texttt{uint32\_t} instead of writing out a sequence of bytes was initially disconcerting, as it indicates a lack of
+fact that the function returns \texttt{uint32\_t} instead of writing out a
+sequence of bytes was initially disconcerting, as it indicates a lack of
 consideration for the issue of endianness, but as \texttt{cnet} always runs on
 one system, this is not a significant problem.
 
@@ -178,6 +179,6 @@ To prevent structure alignment padding from yielding unexpected checksum
 results and \texttt{sizeof()} values, the \texttt{\_\_attribute\_\_ ((packed))}
 type attribute is specified in the definitions of \texttt{cc200\_frame\_t} and
 \texttt{cc200\_packet\_t}. While this is not included in the ISO C99 standard,
-it is supported by boty \texttt{gcc} and \texttt{clang}.
+it is supported by both \texttt{gcc} and \texttt{clang}.
 
 \end{document}
