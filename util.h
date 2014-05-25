@@ -20,7 +20,7 @@
 #define CC200_PRINT(FORMAT, ...) do {                                  \
 	char filename[32];                                             \
 	FILE *log;                                                     \
-	snprintf(filename, 32, "hammertime.%d.log", getpid());         \
+	snprintf(filename, 32, "log.full.%d.txt", getpid());           \
 	log = fopen(filename, "a");                                    \
 	if (log) {                                                     \
 		fprintf(log, CC200_PRINT_ARGS(FORMAT, __VA_ARGS__));   \
