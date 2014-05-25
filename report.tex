@@ -1,7 +1,6 @@
 \documentclass[a4paper,12pt,titlepage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=1in]{geometry}
 \usepackage{parskip}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -18,43 +17,56 @@
 \title{Computer Communications 200:\\
        Stop-and-wait assignment}
 \date{May 25, 2014}
-\author{Azabani, Delan\\17065012\\Wednesday 10 a.m.}
+\author{Delan Azabani\\17065012\\Wednesday 10 a.m.}
 
 \begin{document}
 
+\pagenumbering{gobble}
+
 \maketitle
+
+\pagenumbering{arabic}
+
+\section{Read me}
+
+To interact with this assignment, use the following \texttt{Makefile} rules:
+
+\begin{itemize}
+	\item \texttt{make submission} compiles the report and sample logs;
+	\item \texttt{make cli} runs the network simulation in a terminal;
+	\item \texttt{make gui} runs the network simulation graphically; and
+	\item \texttt{make clean} deletes all generated files.
+\end{itemize}
+
+\section{Fulfilment of submission requirements}
+
+\begin{enumerate}
+	\item The protocol source code can be found in \texttt{*.[ch]};
+	\item the test topology file is \texttt{TOPOLOGY};
+	\item sample output for each node is in \texttt{log.node.*.txt}; and
+	\item the purposes of the \texttt{README} are served by this report,
+	\item which is the electronic PDF file you are reading.
+\end{enumerate}
 
 \section{Organisation of source code}
 
 The source code is divided into the following modules:
 
 \begin{itemize}
-	\item \texttt{Makefile} simply contains a \texttt{clean} recipe;
-	\item \texttt{TOPOLOGY} defines the compilation options, node topology
-	      and link characteristics;
-	\item \texttt{assignment.[ch]} contain the handler for
-	      \texttt{EV\_REBOOT} as well as global node state;
-	\item \texttt{list.[ch]} implement a queue of frames via a
-	      double-ended, doubly-linked list;
-	\item \texttt{physical.[ch]} deal with data reaching and leaving the
-	      physical layer;
-	\item \texttt{datalink.[ch]} deal with data reaching the data link
-	      layer from above and below;
-	\item \texttt{network.[ch]} deal with data reaching the network
-	      layer from above and below;
-	\item \texttt{application.[ch]} deal with data reaching and leaving
-	      the application layer;
+	\item \texttt{assignment.[ch]} handles \texttt{EV\_REBOOT} and contains
+	      global node state;
+	\item \texttt{list.[ch]} implement a queue of frames via a linked list;
+	\item \texttt{physical.[ch]} implements the physical layer;
+	\item \texttt{datalink.[ch]} implements the data link layer;
+	\item \texttt{network.[ch]} implements the network layer;
+	\item \texttt{application.[ch]} implements the application layer;
 	\item \texttt{type.h} contains data structures, constants and other
-	      type definitions; and
-	\item \texttt{util.h} defines preprocessor macros for assertions,
-	      debugging and portable printing.
+	      definitions; and
+	\item \texttt{util.h} defines preprocessor macros, some for debugging.
 \end{itemize}
 
-Depending on whether the symbol is a preprocessor macro or C identifier, all
-global symbols are prefixed with \texttt{CC200\_} or \texttt{cc200\_}. Doing
-this without exception helps avoid polluting the global namespaces as well as
-collisions with \texttt{cnet} symbols (such as \texttt{CHECK()} and
-\texttt{CC200\_CHECK()}).
+All global symbols are prefixed with \texttt{CC200\_} or \texttt{cc200\_} to
+avoid conflicts and namespace pollution.
 
 \section{Debugging and logging}
 
@@ -103,64 +115,66 @@ in the declaration to yield a compatible function signature. An alternative
 solution includes the use of the \texttt{CC200\_UNUSED()} macro, which is
 undesirable.
 
-\section{Simplified program flow}
+\section{Simplified protocol flow}
 
-\texttt{assignment.c} is where the simulation ultimately commences. A static
-routing table as well as some state (global to each node) are initialised. The
-\texttt{cc200\_link\_timer\_expired} event handler resends the specified link's
-data frame waiting at the head of the queue.
+In \texttt{assignment.c} a static routing table as well as some node-global
+state are initialised. The \texttt{cc200\_link\_timer\_expired} event handler
+resends the specified link's data frame waiting at the head of the queue.
 
-The queues and timers, one for each link, are configured. A handful of
-diagnostic messages are printed, the two primary events are bound to their
-handlers, and the generation of messages by the application layer is commenced.
+The queues and timers, one for each link, are configured. The two primary
+events are bound to their handlers, and the generation of messages by the
+application layer is commenced.
 
 \begin{enumerate}
 	\item \texttt{cc200\_application\_ready} accepts a message of up to 255
-	      bytes from the sender's application layer, immediately handing it
-	      down to the network layer;
+	      bytes from the sender's application layer, handing it down to
+	      the network layer;
 	\item \texttt{cc200\_network\_from\_application} wraps the message in
 	      a packet with source and destination node addresses, as well as
-	      a field specifying the message's length;
+	      the message length;
 	\item \texttt{cc200\_datalink\_from\_network} wraps the packet in a
-	      data frame, tagged with a sequence number and a CRC32 checksum
-	      is calculated over the whole frame;
+	      data frame, tagged with a sequence number and a CRC32 checksum;
 	\item \texttt{cc200\_datalink\_data\_next} sets a timeout for the next
-	      data frame to have its corresponding acknowledgement frame
-	      received by the sender;
-	\item \texttt{cc200\_physical\_from\_datalink} writes the frame to a
-	      physical medium;
-	\item \texttt{cc200\_physical\_ready} accepts the delivered frame
-	      from the physical layer;
-	\item \texttt{cc200\_datalink\_from\_physical} verifies the frame's
-	      checksum and sequence number, stopping the link's timer and
-	      dequeueing a data frame if it is an ACK;
-	\item \texttt{cc200\_datalink\_ack} replies to the previous hop with an
-	      acknowledgement;
+	      data frame to have its corresponding acknowledgement received by
+	      the sender;
+	\item \texttt{cc200\_physical\_from\_datalink} physically writes the
+	      frame;
+	\item \texttt{cc200\_physical\_ready} accepts the physically delivered
+	      frame;
+	\item \texttt{cc200\_datalink\_from\_physical} verifies the checksum of
+	      the frame and its sequence number, stopping the link's timer and
+	      dequeueing a pending data frame if it is an acknowledgement;
+	\item \texttt{cc200\_datalink\_ack} acknowledges the previous hop;
 	\item \texttt{cc200\_network\_from\_datalink} either passes the message
 	      up to the application layer, or forwards the packet to the next
-	      hop in the routing path, as necessary; and
-	\item \texttt{cc200\_application\_from\_network} writes the
-	      payload to the application layer.
+	      hop in the routing path, as defined by the source and destination
+	      addresses; and
+	\item \texttt{cc200\_application\_from\_network} writes to the
+	      application layer.
 \end{enumerate}
 
-Some functions in this path, such as \texttt{cc200\_datalink\_ack} and
-\texttt{cc200\_network\_from\_datalink}, may require further traversal back up
-and down this `protocol stack', sometimes or always.
+An ideal attempt for single-hop transmission of data may involve:
+
+\begin{itemize}
+	\item the sender following steps 1 through 5, then
+	\item the recipient following steps 6, 7, 8, 5, 9 and 10, then
+	\item the sender following steps 6 and 7.
+\end{itemize}
 
 \section{Flow and error control}
 
 For each node, there is a outgoing frame queue for each link. This is required
 because multiple application layer messages can be created, or packets arrive
 to be forwarded, before an acknowledgement is received on a link. With the
-stop-and-wait automatic repeat request method, no additional data frames may
-be sent during this time.
+stop-and-wait automatic repeat request method, no more than one unacknowledged
+data frame may be sent on each link.
 
 This queue is implemented with a linked list allocated on the heap, as opposed
 to a circular array buffer, and is thus unbounded in maximum length except by
 the memory of the host system. At the same time, however, I did not use
 \texttt{CNET\_disable\_application} and \texttt{CNET\_enable\_application} to
-create artificial flow control, as this is both unrealistic and virtually
-impossible in the real world.
+create artificial flow control, as this is unrealistic and impossible in the
+real world.
 
 Because the message rate remains constant throughout the simulation process and
 packets are never dropped regardless of a frame queue's count, a consequence of
@@ -171,14 +185,14 @@ message delivery time.
 \texttt{CNET\_crc32} is used as a fairly reliable and practical scheme for
 frame error detection. It is used for both data and acknowledgement frames. The
 fact that the function returns \texttt{uint32\_t} instead of writing out a
-sequence of bytes was initially disconcerting, as it indicates a lack of
-consideration for the issue of endianness, but as \texttt{cnet} always runs on
-one system, this is not a significant problem.
+sequence of bytes was disconcerting, as it indicates a lack of consideration
+for endianness, but it should cause no problems as \texttt{cnet} always runs on
+one system.
 
 To prevent structure alignment padding from yielding unexpected checksum
 results and \texttt{sizeof()} values, the \texttt{\_\_attribute\_\_ ((packed))}
 type attribute is specified in the definitions of \texttt{cc200\_frame\_t} and
-\texttt{cc200\_packet\_t}. While this is not included in the ISO C99 standard,
-it is supported by both \texttt{gcc} and \texttt{clang}.
+\texttt{cc200\_packet\_t}. While this type attribute is not included in the ISO
+C99 standard, it is supported by both \texttt{gcc} and \texttt{clang}.
 
 \end{document}
